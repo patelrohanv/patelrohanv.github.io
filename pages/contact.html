@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <title>Rohan Patel: About</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">Menu</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about.html">About Me</a></li>
+                        <li><a href="../pages/work.html">My Work</a></li>
+                        <li><a href="../pages/resume.html"> Resume </a></li>
+                        <li><a href="../pages/contact.html">Contact Me</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about.html">About Me</a></li>
+                        <li><a href="../pages/work.html">My Work</a></li>
+                        <li><a href="../pages/resume.html"> Resume </a></li>
+                        <li><a href="../pages/contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row" id="contactForm">
+                <form class="col s12" onsubmit="return contact()">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="phone" type="tel" class="validate">
+                            <label for="passphoneword" data-error="wrong" data-success="right">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="messagae" type="text" class="validate">
+                            <label for="messagae">Message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Rohan Patel</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/patelrohanv">GitHub</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/patelrohanv/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <!-- Personal JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>

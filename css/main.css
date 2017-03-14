@@ -1,0 +1,41 @@
+/*Remember
+    #id selector
+    .class selector
+*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.nav-wrapper {
+    background-color: #007849 !important;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: #0b3c5d;
+}
+
+.collapsible-header {
+    background-color: #1d2731;
+    color: #d9b319;
+    font-weight: bold;
+}
+
+.collapsible-body {
+    background-color: #328cc1;
+}
+
+footer {
+    background-color: #007849 !important;
+}
+
+.parallax-container {
+    height: 250;
+}
+
+.myInfo {
+    font: Verdana;
+}
