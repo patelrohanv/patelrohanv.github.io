@@ -15,7 +15,8 @@ body {
 
 main {
     flex: 1 0 auto;
-    background-color: #0b3c5d;
+    background-image: url(../images/desk_light.jpeg);
+    background-size: 100%;
 }
 
 .collapsible-header {
@@ -30,10 +31,6 @@ main {
 
 footer {
     background-color: #007849 !important;
-}
-
-.parallax-container {
-    height: 250;
 }
 
 .myInfo {
