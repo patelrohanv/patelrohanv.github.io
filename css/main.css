@@ -10,7 +10,8 @@ body {
 }
 
 .nav-wrapper {
-    background-color: #007849 !important;
+    background-color: #76323f !important;
+    color: #d7cec7;
 }
 
 main {
@@ -26,13 +27,29 @@ main {
 }
 
 .collapsible-body {
-    background-color: #328cc1;
+    background-color: #565656;
 }
 
 footer {
-    background-color: #007849 !important;
+    background-color: #76323f !important;
+    color: #d7cec7;
 }
 
 .myInfo {
     font: Verdana;
+}
+
+#elevator {
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+#headshot {
+    margin: auto;
+    display: block;
+    width: 230px;
+    border: solid 4px #fff;
 }
