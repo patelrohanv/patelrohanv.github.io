@@ -1,59 +1,59 @@
-/*Remember
+    /*Remember
     #id selector
     .class selector
 */
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.nav-wrapper {
-    background-color: #76323f !important;
-    color: #d7cec7;
-}
-
-main {
-    flex: 1 0 auto;
-    background-image: url(../images/desk_light.jpeg);
-    background-size: 100%;
-}
-
-.collapsible-header {
-    background-color: #1d2731;
-    color: #d9b319;
-    font-weight: bold;
-}
-
-.collapsible-body {
-    background-color: #565656;
-}
-
-.collapsible-body .collection-item {
-    background-color: #565656;
-}
-
-footer {
-    background-color: #76323f !important;
-    color: #d7cec7;
-}
-
-.myInfo {
-    font: Verdana;
-}
-
-#elevator {
-    background-color: black;
-    opacity: 0.75;
-    color: white;
-    text-align: center;
-    display: block;
-}
-
-#headshot {
-    margin: auto;
-    display: block;
-    width: 230px;
-    border: solid 4px #fff;
-}
+    
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    
+    .nav-wrapper {
+        background-color: #76323f !important;
+        color: #d7cec7;
+    }
+    
+    main {
+        flex: 1 0 auto;
+        background-image: url(../images/desk_light.jpeg);
+        background-size: 100%;
+    }
+    
+    .collapsible-header {
+        background-color: #1d2731;
+        color: #ffc107;
+        font-weight: bold;
+    }
+    
+    .collapsible-body {
+        background-color: #616161;
+    }
+    
+    .collapsible-body .collection-item {
+        background-color: #616161;
+    }
+    
+    footer {
+        background-color: #76323f !important;
+        color: #d7cec7;
+    }
+    
+    .myInfo {
+        font: Verdana;
+    }
+    
+    #elevator {
+        background-color: black;
+        opacity: 0.75;
+        color: white;
+        text-align: center;
+        display: block;
+    }
+    
+    #headshot {
+        margin: auto;
+        display: block;
+        width: 230px;
+        border: solid 4px #fff;
+    }
