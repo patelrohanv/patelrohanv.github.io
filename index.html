@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <!-- Personal CSS -->
@@ -11,103 +13,36 @@
 
 <body>
     <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" data-activates="mobile-demo" class="button-collapse">Menu</a>
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About Me</a></li>
-                        <li><a href="pages/work.html">My Work</a></li>
-                        <li><a href="pages/resume.html"> Resume </a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About Me</a></li>
-                        <li><a href="pages/work.html">My Work</a></li>
-                        <li><a href="pages/resume.html"> Resume </a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
         <div class="parallax-container">
             <div class="parallax"><img src="./images/code_m.jpeg"></div>
             <img id="headshot" class="circle responsive-img" src="./images/headshot.jpg">
+            <br>
             <div class="row">
                 <div class="col s12 m4 l2">
                 </div>
                 <div id="elevator" class="col s12 m4 l8">
-                    <p>My name is Rohan Patel. I am currently a senior at the University of Pittsburgh studying computer science and I am on track to finish my degree the summer of 2017. I enjoy learning more about and have a passion for technology; specifically,
-                        how it can be leveraged to advance and how it interects with other industries/fields.</p>
+                    <p>My name is Rohan Patel; I am a senior at the University of Pittsburgh. I am finishing my degree in Computer Science Summer of 2017. I have a passion for technology and enjoy learning about how it can be leveraged to advance other fields.
+                    </p>
                 </div>
                 <div class="col s12 m4 l2">
                 </div>
-
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l4 offset-l4">
+                    <a class="waves-effect waves-light btn" href="https://www.linkedin.com/in/patelrohanv/">LinkedIn</a>
+                    <a class="waves-effect waves-light btn" href="https://github.com/patelrohanv">GitHub</a>
+                    <a class="waves-effect waves-light btn" href="./documents/rohan_resume.pdf">Resume</a>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <div>
-                <ul class="collapsible" data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header active">
-                            <span class="hint">College Year One</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
-                            <span>
-                            Started college at the University of Pittsburgh on a pre-med track planning to do a triple major in Neurosciene,
-                            Philosophy, and History and Philsophy of Science. I realize now that this was an incredibly foolish idea on my part.
-                            During this year I started volunteering at UPMC Shadyside Hospital and did research under Dr. Amit Sethi while he was studying
-                            recovery of movement among stroke patients. I also joined the South Asian Student Association as a Freshman Chair and joined my 
-                            fraternity, Sigma Beta Rho Fraternity Inc. 
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active">
-                            <span>College Year Two</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
-                            <span>
-                            This year saw the transition of me from the pre-med track to pursuing something new. I also began working in the Swanson School
-                            of Engineering in the Technology Group working on providing helpdesk support, I first tried out studying
-                            Economics but ultimately decided to switch to Computer Science after re-realized my passion was in technology and that
-                            I enjoyed writing code to solve problems.
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active">
-                            <span>College Year Three</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
-                            <span>
-                            This was my first full school term as a Computer Science major. 
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active">
-                            <span>College Year Four</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
-                            <span>
-                            My last year in college. I'm currently in the process of looking for a job after college.
-                        </span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="divider"></div>
-            <div>
-                <ul class="collapsible" data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header active">
-                            <span>Programming Languages</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card grey darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Programming Languages</span>
                             <ul>
                                 <li>Java</li>
                                 <li>C#</li>
@@ -118,12 +53,12 @@
                                 <li>SQL</li>
                             </ul>
                         </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active">
-                            <span>Tools</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card grey darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Tools</span>
                             <ul>
                                 <li>Git</li>
                                 <li>HTML/CSS</li>
@@ -132,69 +67,183 @@
                                 <li>Eclipse</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header  active">
+                                <span class="hint">College Year One</span>
+                            </div>
+                            <div class="collapsible-body" class="myInfo">
+                                <ul class="collection">
+                                    <div class="divider"></div>
+                                    <li class="collection-item">Started at the University of Pittsburgh on a pre-med track</li>
+                                    <li class="collection-item">Volunteered at UPMC Shadyside Hospital</li>
+                                    <li class="collection-item">Did research under Dr. Amit Sethi while he was studying recovery of movement among stroke patients</li>
+                                    <li class="collection-item">Joined the South Asian Student Association board as a Freshman Chair</li>
+                                    <li class="collection-item">Was inducted into my fraternity, Sigma Beta Rho Fraternity Inc.</li>
+                                    <div class="divider"></div>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m6 l6">
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header  active">
+                                <span>College Year Two</span>
+                            </div>
+                            <div class="collapsible-body" class="myInfo">
+                                <ul class="collection">
+                                    <div class="divider"></div>
+                                    <li class="collection-item">Transitioned from the pre-med track to Computer Science</li>
+                                    <li class="collection-item">Began working at the Swason School of Engineering providing helpdesk and technical support</li>
+                                    <li class="collection-item"> Served as the External Affairs Chair of the South Asian Student Association</li>
+                                    <li class="collection-item">Served as the Secretary of Sigma Beta Rho Fraternity Inc.</li>
+                                    <li class="collection-item">Helped found a Diversity Council at Pitt.</li>
+                                    <div class="divider"></div>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m6 l6">
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header active">
+                                <span>College Year Three</span>
+                            </div>
+                            <div class="collapsible-body" class="myInfo">
+                                <ul class="collection">
+                                    <div class="divider"></div>
+                                    <li class="collection-item">Participated in Steel Hacks 2016, my first hackathon</li>
+                                    <li class="collection-item">Interned at CosmoLex in North Brunswick, NJ</li>
+                                    <li class="collection-item">Interned at Giant Eagle in Pittsburgh, PA</li>
+                                    <li class="collection-item">Served as Vice President of the South Asian Student Association</li>
+                                    <li class="collection-item">Served a second term as Secretary of Sigma Beta Rho Fraternity Inc.</li>
+                                    <li class="collection-item">Served as Vice Chair of Social Media of the Diversity Council</li>
+                                    <div class="divider"></div>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m6 l6">
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header active">
+                                <span>College Year Four</span>
+                            </div>
+                            <div class="collapsible-body" class="myInfo">
+                                <ul class="collection">
+                                    <div class="divider"></div>
+                                    <li class="collection-item">Participated in the Pitt Challenge, a healthcare themed hackathon</li>
+                                    <li class="collection-item">Participated in Steel Hacks 2017 where my partner and I won a category award for "HackHarassment"</li>
+                                    <li class="collection-item">Served as the Senior Advisor for the South Asian Student Association</li>
+                                    <li class="collection-item">Served as the Treasurer of Sigma Beta Rho Fraternity Inc.</li>
+                                    <li class="collection-item">Worked on building a new website for Sigma Beta Rho Fraternity Inc.</li>
+                                    <li class="collection-item">Accepted a job at BNY Mellon in Pittsburgh, PA</li>
+                                    <div class="divider"></div>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                        <div class="collapsible-header active">
+                            <span>Giant Eagle</span>
+                        </div>
+                        <div class="collapsible-body" class="myInfo">
+                            <span>June 2016 - August 2016</span>
+                            <br>
+                            <span>Was part of the Digital Commerce department to add features for merging, splitting and transferring user accounts</span>
+                            <br>
+                            <br>
+                            <span>Tested code under development where I optimized SQL queries and found where they were breaking </span>
+                            <br>
+                            <br>
+                            <span>Did a cross­-departmental project on Generational Diversity and Inclusion initiatives in order to attract and retain younger talent and keep the workplace friendly for more seasoned employees</span>
+                            <br>
+                            <br>
+                            <span>Presented cross­-departmental project to company executives with timeline, budget, and projected savings</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header active">
+                            <span>CosmoLex</span>
+                        </div>
+                        <div class="collapsible-body" class="myInfo">
+                            <span>April 2016 - May 2016</span>
+                            <br>
+                            <span>Tested software efficiency by tracing function calls and data queries in order to determine which calls and queries could more efficient or removed</span>
+                            <br>
+                            <br>
+                            <span>Created a Windows Form application to read list of servers (Windows and Linux) to a table that users could automatically log into</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header active">
+                            <span>Swanson School of Engineering</span>
+                        </div>
+                        <div class="collapsible-body" class="myInfo">
+                            <span>August 2015 - August 2015</span>
+                            <br>
+                            <span>Managed the computer labs and assisted personnel such as professors, faculty and administrators</span>
+                            <br>
+                            <br>
+                            <span>Answered calls at the help desk for technical support</span>
+                            <br>
+                            <br>
+                            <span>Created and resolved support tickets</span>
+                            <br>
+                            <br>
+                            <span>Rebuilt and repaired computers, printers and other devices Managed and took care of the computer labs</span>
+                            <br>
+                            <br>
+                            <span>Handled other such technology related problems</span>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <div class="divider"></div>
+
             <div>
-                <ul class="collapsible active active" data-collapsible="expandable">
+                <ul class="collapsible" data-collapsible="expandable">
                     <li>
                         <div class="collapsible-header active">
-                            <span>Computer Science Courses</span>
+                            <span>Side Projects</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li>INTERMEDIATE PROGRAMMING USING JAVA</li>
-                                <li>DISCRETE STRUCTURES FOR CS</li>
-                                <li>INTRO TO COMPUTER PROGRAMMING WITH JAVA</li>
-                                <li>DATA STRUCTURES</li>
-                                <li>COMPUTER ORGANIZATION & ASSEMBLY LANGUAGE</li>
-                                <li>INTERMEDIATE WEB DESIGN & DEVELOPMENT</li>
-                                <li>INTRO TO SYSTEMS SOFTWARE</li>
-                                <li>SOCIAL IMPLICATION OF COMPUTING TECHNOLOGY</li>
-                                <li>ALGORITHM IMPLEMENTATION</li>
-                                <li>SOFTWARE ENGINEERING</li>
-                                <li>INTRO TO OPERATING SYSTEMS</li>
-                                <li>FORMAL METHODS IN COMPUTER SCIENCE</li>
-                                <li>PROGAMMING LANGUAGES FOR WEB APPLICATIONS</li>
-                                <li>INTRODUCTION TO DATA SCIENCE</li>
-                                <li>SPECIAL TOPICS IN COMPUTER SCIENCE: CLOUD COMPUTING</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active">
-                            <span> Courses</span>
-                        </div>
-                        <div class="collapsible-body" class="myInfo">
-                            <ul>
-                                <li>FOUNDATIONS OF BIOLOGY LAB 1</li>
-                                <li>INTRODUCTION TO PSYCHOLOGY</li>
-                                <li>INTRO MACROECONOMIC THEORY</li>
-                                <li>INTRO MICROECONOMIC THEORY</li>
-                                <li>WESTERN CIVILIZATION 1</li>
-                                <li>INTRO TO WESTERN ART MUSIC</li>
-                                <li>FOUNDATIONS OF BIOLOGY LAB 2</li>
-                                <li>FOUNDATIONS OF BIOLOGY 1</li>
-                                <li>FOUNDATIONS OF BIOLOGY 2</li>
-                                <li>GENERAL CHEMISTRY 1</li>
-                                <li>GENERAL CHEMISTRY 2</li>
-                                <li>ANALYTC GEOMETRY & CALCULUS 1</li>
-                                <li>APPLIED STATISTICAL METHODS</li>
-                                <li>SEMESTER IN COMPOSITION: SERVICE-LEARNING </li>
-                                <li>PHILOSOPHY AND SCIENCE</li>
-                                <li>INTRODUCTION TO LOGIC</li>
-                                <li>HINDI 1</li>
-                                <li>LABOR AND THE ECONOMY</li>
-                                <li>ECON DEVELOPMENT OF THE MENA</li>
-                                <li>SCI-FI: EAST AND WEST</li>
-                                <li>RELIGION IN ASIA</li>
-                                <li>SANSKRIT 1</li>
-                                <li>SANSKRIT 2</li>
-                                <li>INTRO TO INFORMATION, SYSTEMS & SOCIETY</li>
-                                <li>ANALYTC GEOMETRY & CALCULUS 2</li>
-                                <li>BIBLE AS LITERATURE</li>
-                                <li>GREEK TRAGEDY</li>
+                                <li class="prjTitle"> Steel Hacks 2016</li>
+                                <span class="sideProject"> We worked on a web application to datamine Twitter for certain keywords and populate a map on a webpage
+                                        with where geographically those tweets were being made. This project was done using Python and Javascript.
+                                    </span>
+                                <br><a class="prjLink" href="https://github.com/patelrohanv/steelhacks2016">Link to Repo</a>
+                                <br>
+                                <br>
+                                <li class="prjTitle"> Pitt Challenge Hackathon </li>
+                                <span class="sideProject">We tried to create a web application that would use some simple machine learning and voice recognition to
+                                    fill out a simple form about what precription medicine to take at what interval. We then tried to use a Python script to send 
+                                    the person who filled out that form a reminder to take their medicine. 
+                                    </span>
+                                <br><a class="prjLink" href="https://github.com/patelrohanv/PittChallenge2017">Link to Repo</a>
+                                <br>
+                                <br>
+                                <li class="prjTitle"> Steel Hacks 2017 </li>
+                                <span class="sideProject"> We created a TwitterBot that would search for tweets containing profanity and a video game title.
+                                    We would then sent a message to the user who made that tweet saying to be nicer on the Internet. This Bot won the #HackHarassment 
+                                    category award.        
+                                    </span>
+                                <br><a class="prjLink" href="https://github.com/patelrohanv/steelhacks2017">Link to Repo</a>
+                                <br><a class="prjLink" href="https://devpost.com/software/hack-harassment-for-twitter">Link to DevPost</a>
                             </ul>
                         </div>
                     </li>
@@ -207,6 +256,7 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Rohan Patel</h5>
+                    <h6 class="white-text">Pittsburgh, PA</h6>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>

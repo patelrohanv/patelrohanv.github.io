@@ -30,6 +30,10 @@ main {
     background-color: #565656;
 }
 
+.collapsible-body .collection-item {
+    background-color: #565656;
+}
+
 footer {
     background-color: #76323f !important;
     color: #d7cec7;
