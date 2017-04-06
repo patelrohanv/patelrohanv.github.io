@@ -36,3 +36,18 @@ footer {
 .myInfo {
     font: Verdana;
 }
+
+#elevator {
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+#headshot {
+    margin: auto;
+    display: block;
+    width: 230px;
+    border: solid 4px #fff;
+}
