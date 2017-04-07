@@ -34,6 +34,10 @@
         background-color: #616161;
     }
 
+    .card {
+        border: white;
+    }
+
     footer {
         background-color: #76323f !important;
         color: #d7cec7;
