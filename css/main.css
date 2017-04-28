@@ -3,6 +3,14 @@
     .class selector
 */
     
+    .parallax-container {
+        /*height: 425px;*/
+    }
+    
+    .btn {
+        text-align: center;
+    }
+    
     body {
         display: flex;
         min-height: 100vh;
@@ -10,8 +18,8 @@
     }
     
     .nav-wrapper {
-        background-color: #76323f !important;
-        color: #d7cec7;
+        background-color: #616161 !important;
+        color: #ffc107;
     }
     
     main {
@@ -33,13 +41,14 @@
     .collapsible-body .collection-item {
         background-color: #616161;
     }
-
+    
     .card {
         border: white;
     }
+    
     footer {
-        background-color: #76323f !important;
-        color: #d7cec7;
+        background-color: #616161 !important;
+        color: #ffc107;
     }
     
     .myInfo {
