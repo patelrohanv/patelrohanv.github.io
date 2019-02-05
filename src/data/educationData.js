@@ -3,7 +3,7 @@ export var education_data = [
         id: "pitt",
         school: "University of Pittsburgh",
         degree: "Bachelors of Science - Computer Science",
-        graduated: "August 2017",
+        graduated: "Graduated August 2017",
         coursework: [                         
             "Algorithm Implementation",
             "Introduction to Operating Systems",

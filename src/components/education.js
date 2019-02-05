@@ -1,32 +1,40 @@
 import React, { Component } from 'react';
 import { education_data } from '../data/educationData';
-import { Row, Col, Card, CardTitle } from 'react-materialize';
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Card, CardActions, CardHeader, CardText } from 'material-ui/Card';
 
 class Education extends React.Component {
 
     render() {
         console.log(education_data)
         const schoolInfo = education_data.map((e) => {
-            const classes = e.coursework.map( (c) => {
-                return(
-                    <li>- {c}</li>
+            const classes = e.coursework.map((c) => {
+                return (
+                    <li>{c}</li>
                 );
             });
             return (
-                <Col s={12} m={6}>
-                    <Card className='small'
+                <Card>
+                    <CardHeader
                         title={e.school}
-                        reveal={<ul>{classes}</ul>}>
-                        <h6>{e.degree}</h6> <br />
-                        <h6>{e.graduated}</h6> <br />
-                    </Card>
-                </Col>
+                        subtitle="Click to view more details"
+                        actAsExpander={true}
+                        showExpandableButton={true}
+                    />
+                    <CardText expandable={true}>
+                        {e.degree} <br/>
+                        {e.graduated} <br/> <br/>
+                        <p>Relevant coursework</p><br/>
+                        {classes}
+                    </CardText>
+                </Card>
             );
         });
         return (
-            <div>
-                <Row> {schoolInfo}</Row>
-            </div>
+            <MuiThemeProvider>
+                {schoolInfo}
+            </MuiThemeProvider>
         );
     }
 }
