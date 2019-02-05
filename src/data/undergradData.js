@@ -1,4 +1,4 @@
-export var undergrad = [
+export var undergrad_data = [
     {
         year: "freshman",
         info: [

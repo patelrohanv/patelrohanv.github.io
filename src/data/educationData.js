@@ -1,5 +1,6 @@
-export var education = [
+export var education_data = [
     {
+        id: "pitt",
         school: "University of Pittsburgh",
         degree: "Bachelors of Science - Computer Science",
         graduated: "August 2017",
@@ -15,11 +16,12 @@ export var education = [
 
     },
     {
-        schoool: "Georgia Institute of Technology",
+        id: "gtech",
+        school: "Georgia Institute of Technology",
         degree: "Masters of Science - Computer Science",
         graduated: "Expected 2021",
         coursework: [                         
-            "Databases",
+            "Database Systems, Concepts and Design",
         ]
     },
 ]

@@ -1,5 +1,6 @@
-export var experience = [
+export var experience_data = [
     {
+        id: "bny_ae",
         company: "Bank of New York Mellon",
         title: "Software Engineer",
         dates: "September 2018 - Present",
@@ -10,6 +11,7 @@ export var experience = [
         ]
     },
     {
+        id: "bny_tlp",
         company: "Bank of New York Mellon",
         title: "Senior Associate - Technology Leadership Program",
         dates: "June 2017 - August 2018",
@@ -22,6 +24,7 @@ export var experience = [
         ]
     },
     {
+        id: "geagle_intern",
         company: "Giant Eagle",
         title: "Software Engineering Intern",
         dates: "June 2016 - August 2016",
@@ -33,6 +36,7 @@ export var experience = [
         ]
     },
     {
+        id: "cosmolex_intern",
         company: "CosmoLex",
         title: "Software Engineering Intern",
         dates: "April 2016 - May 2016",
@@ -42,6 +46,7 @@ export var experience = [
         ]
     },
     {
+        id: "ssoe_intern",
         company: "Swanson School of Engineering",
         title: "Technology Intern",
         dates: "August 2015 - August 2015",

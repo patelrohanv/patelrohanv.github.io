@@ -1,4 +1,4 @@
-export var skills = [
+export var skills_data = [
     {
         type: "Languages",
         details: [
