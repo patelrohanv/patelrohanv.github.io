@@ -29,14 +29,14 @@ export var project_data = [
     {
         id: "prv",
         title: "patelrohanv.com",
-        info: "This is a link to the repo for this built.",
+        info: "This is a link to the repo for my website. Built using React and MaterialUI.",
         gitLink: "https://github.com/patelrohanv/patelrohanv.github.io",
         projectLink: null,
     },
     {
         id: "pittsigrho",
         title: "Pitt SigRho Website",
-        info: "I built and maintain the website for the University of Pittsburgh chapter of Sigma Beta Rho Fraternity Inc. I gigggbuilt this website using Twitter's Bootstrap framework",
+        info: "I built and maintain the website for the University of Pittsburgh chapter of Sigma Beta Rho Fraternity Inc. I built this website using Twitter's Bootstrap framework",
         gitLink: "https://github.com/sigrhopitt/sigrhopitt.github.io",
         projectLink: "https://sigrhopitt.github.io"
     }

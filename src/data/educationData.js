@@ -18,7 +18,7 @@ export var education_data = [
     {
         id: "gtech",
         school: "Georgia Institute of Technology",
-        degree: "Masters of Science - Computer Science",
+        degree: "Master of Science - Computer Science",
         graduated: "Expected 2021",
         coursework: [                         
             "Database Systems, Concepts and Design",

@@ -1,6 +1,6 @@
 export var undergrad_data = [
     {
-        year: "freshman",
+        year: "Freshman",
         info: [
             "Started at the University of Pittsburgh on a pre-med track",
             "Volunteered at UPMC Shadyside Hospital",
@@ -10,7 +10,7 @@ export var undergrad_data = [
         ]
     },
     {
-        year: "sophomore",
+        year: "Sophomore",
         info: [
             "Transitioned from the pre-med track to Computer Science",
             "Swason School of Engineering: Provided helpdesk and technical support",
@@ -20,7 +20,7 @@ export var undergrad_data = [
         ]
     },
     {
-        year: "junior",
+        year: "Junior",
         info: [
             "Steel Hacks 2016, my first hackathon",
             "Interned at CosmoLex in North Brunswick, NJ",
@@ -31,7 +31,7 @@ export var undergrad_data = [
         ]
     },
     {
-        year: "senior",
+        year: "Senior",
         info: [
             "Pitt Challenge 2017, a healthcare themed hackathon",
             "Steel Hacks 2017: Won a category award for \"HackHarassment\"",
