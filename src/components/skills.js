@@ -7,6 +7,11 @@ import Grid from '@material-ui/core/Grid';
 
 class Skills extends React.Component {
     render() {
+        const styles = {
+            ul: {
+                listStyleType: 'none',
+            },
+        }
         const skillTypes = skills_data.map((t) => {
             const skillDetails = t.details.map((d) => {
                 return (
@@ -21,7 +26,9 @@ class Skills extends React.Component {
                             title={t.type}
                         />
                         <CardText>
-                            {skillDetails}
+                            <ul style={styles.ul}>
+                                {skillDetails}
+                            </ul>
                         </CardText>
                     </Card>
                 </Grid>

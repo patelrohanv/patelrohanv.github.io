@@ -7,6 +7,11 @@ import Grid from '@material-ui/core/Grid';
 
 class Undergrad extends React.Component {
     render() {
+        const styles = {
+            ul: {
+                listStyleType: 'none',
+            },
+        }
         const ud = undergrad_data.map((u) => {
             const bullets = u.info.map((c) => {
                 return (
@@ -23,7 +28,9 @@ class Undergrad extends React.Component {
                             showExpandableButton={true}
                         />
                         <CardText expandable={true}>
+                        <ul style={styles.ul}>
                             {bullets}
+                        </ul>
                         </CardText>
                     </Card>
                 </Grid>

@@ -8,6 +8,11 @@ import Grid from '@material-ui/core/Grid';
 class Education extends React.Component {
 
     render() {
+        const styles = {
+            ul: {
+                listStyleType: 'none',
+            },
+        }
         console.log(education_data)
         const schoolInfo = education_data.map((e) => {
             const classes = e.coursework.map((c) => {
@@ -30,7 +35,9 @@ class Education extends React.Component {
                         />
                         <CardText expandable={true}>
                             <p>Relevant coursework</p><br />
-                            {classes}
+                            <ul style={styles.ul}>
+                                {classes}
+                            </ul>
                         </CardText>
                     </Card>
                 </Grid>

@@ -8,6 +8,12 @@ import Grid from '@material-ui/core/Grid';
 
 class Experience extends React.Component {
     render() {
+        const styles = {
+            ul: {
+                listStyleType: 'none',
+            },
+        }
+
         const exp = experience_data.map((e) => {
             const details = e.details.map((d) => {
                 return (
@@ -23,7 +29,7 @@ class Experience extends React.Component {
                             subtitle={e.dates}
                         />
                         <CardText>
-                            {details}
+                            <ul style={styles.ul}>{details}</ul>
                         </CardText>
                     </Card>
                 </Grid>
