@@ -4,6 +4,9 @@ import { education_data } from '../data/educationData';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Card, CardHeader, CardText, CardTitle } from 'material-ui/Card';
 import Grid from '@material-ui/core/Grid';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 class Education extends React.Component {
 
@@ -17,7 +20,9 @@ class Education extends React.Component {
         const schoolInfo = education_data.map((e) => {
             const classes = e.coursework.map((c) => {
                 return (
-                    <li>{c}</li>
+                    <ListItem>
+                        <ListItemText primary={c} />
+                    </ListItem>
                 );
             });
             return (
@@ -35,9 +40,9 @@ class Education extends React.Component {
                         />
                         <CardText expandable={true}>
                             <p>Relevant coursework</p><br />
-                            <ul style={styles.ul}>
+                            <List dense={true}>
                                 {classes}
-                            </ul>
+                            </List>
                         </CardText>
                     </Card>
                 </Grid>
@@ -45,7 +50,7 @@ class Education extends React.Component {
         });
         return (
             <MuiThemeProvider>
-                <Grid container spacing={24}>
+                <Grid container spacing={12}>
                     {schoolInfo}
                 </Grid>
             </MuiThemeProvider>

@@ -2,6 +2,7 @@ import React from 'react';
 import About from './about'
 import headshot from '../images/headshot.jpg'
 import background from '../images/code_m.jpeg'
+import { github, linkedIn, resume } from '../data/linksData'
 
 import Button from '@material-ui/core/Button'
 
@@ -27,9 +28,9 @@ const Header = () => (
         <About />
         <br />
         <div>
-            <Button variant="contained" href="https://www.linkedin.com/in/patelrohanv/" target="_blank"> LinkedIn</Button>
-            <Button variant="contained" href="https://github.com/patelrohanv" target="_blank">GitHub</Button>
-            <Button variant="contained" href="https://resume.creddle.io/resume/mv7do3zgiw" target="_blank"> Resume</Button>
+            <Button variant="contained" href={linkedIn} target="_blank"> LinkedIn</Button>
+            <Button variant="contained" href={github} target="_blank">GitHub</Button>
+            <Button variant="contained" href={resume} target="_blank"> Resume</Button>
         </div>
         <br />
     </div >

@@ -1,4 +1,6 @@
 import React from 'react';
+import { github, linkedIn } from '../data/linksData'
+
 import Grid from '@material-ui/core/Grid'
 
 const Footer = () => (
@@ -10,8 +12,8 @@ const Footer = () => (
         <Grid item xs={3}>
             <h5>Links</h5>
             <ul>
-                <li><a href="https://github.com/patelrohanv">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/patelrohanv/">LinkedIn</a></li>
+                <li><a href={github}>GitHub</a></li>
+                <li><a href={linkedIn}>LinkedIn</a></li>
             </ul>
         </Grid>
     </Grid>

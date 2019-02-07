@@ -11,6 +11,8 @@ import Footer from './components/footer';
 
 import background from './images/desk_light_l.jpeg'
 
+import Divider from '@material-ui/core/Divider';
+
 class App extends Component {
   render() {
     const styles = {
@@ -23,13 +25,13 @@ class App extends Component {
         <Header />
         <div style= {styles.main}>
           <Skills />
-          <hr />
+          <Divider />
           <Education />
-          <hr />
+          <Divider />
           <Experience />
-          <hr />
+          <Divider />
           <Projects />
-          <hr />
+          <Divider />
           <Undergrad />
         </div>
         <Footer />

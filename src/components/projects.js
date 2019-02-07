@@ -31,7 +31,7 @@ class Projects extends React.Component {
         });
         return (
             <MuiThemeProvider>
-                <Grid container spacing={24}>
+                <Grid container spacing={12}>
                     {prj}
                 </Grid>
             </MuiThemeProvider>

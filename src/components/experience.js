@@ -4,6 +4,9 @@ import { experience_data } from '../data/experienceData';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { CardTitle, Card, CardHeader, CardText } from 'material-ui/Card';
 import Grid from '@material-ui/core/Grid';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 
 class Experience extends React.Component {
@@ -17,7 +20,9 @@ class Experience extends React.Component {
         const exp = experience_data.map((e) => {
             const details = e.details.map((d) => {
                 return (
-                    <li>{d}</li>
+                    <ListItem>
+                        <ListItemText primary={d}/>
+                    </ListItem>
                 );
             });
             return (
@@ -29,7 +34,9 @@ class Experience extends React.Component {
                             subtitle={e.dates}
                         />
                         <CardText>
-                            <ul style={styles.ul}>{details}</ul>
+                            <List dense={true}>
+                                {details}
+                            </List>
                         </CardText>
                     </Card>
                 </Grid>
@@ -37,7 +44,7 @@ class Experience extends React.Component {
         });
         return (
             <MuiThemeProvider>
-                <Grid container spacing={24}>
+                <Grid container spacing={12}>
                     {exp}
                 </Grid>
             </MuiThemeProvider>
