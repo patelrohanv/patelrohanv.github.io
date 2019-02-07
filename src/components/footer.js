@@ -11,8 +11,8 @@ const Footer = () => (
             <div>
               <h5>Links</h5>
               <ul>
-                <li><a href="https://github.com/patelrohanv" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/patelrohanv/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/patelrohanv">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/patelrohanv/">LinkedIn</a></li>
               </ul>
             </div>
           </div>

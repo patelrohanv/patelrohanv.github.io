@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { experience_data } from '../data/experienceData';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { CardTitle, Card, CardHeader, CardText } from 'material-ui/Card';
+import Grid from '@material-ui/core/Grid';
 
 
 class Experience extends React.Component {
@@ -13,21 +14,25 @@ class Experience extends React.Component {
                 );
             });
             return (
-                <Card>
-                    <CardTitle title={e.title} />
-                    <CardHeader
-                        title={e.company}
-                        subtitle={e.dates}
-                    />
-                    <CardText>
-                        {details}
-                    </CardText>
-                </Card>
+                <Grid item sm={12} md={6} lg={6}>
+                    <Card>
+                        <CardTitle title={e.title} />
+                        <CardHeader
+                            title={e.company}
+                            subtitle={e.dates}
+                        />
+                        <CardText>
+                            {details}
+                        </CardText>
+                    </Card>
+                </Grid>
             );
         });
         return (
             <MuiThemeProvider>
-                {exp}
+                <Grid container spacing={24}>
+                    {exp}
+                </Grid>
             </MuiThemeProvider>
         );
     }

@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { skills_data } from '../data/skillsData';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Card, CardHeader, CardText } from 'material-ui/Card';
+import { Card, CardText, CardTitle } from 'material-ui/Card';
+import Grid from '@material-ui/core/Grid';
 
 class Skills extends React.Component {
     render() {
@@ -12,20 +13,25 @@ class Skills extends React.Component {
                 );
             });
             return (
-                <Card>
-                    <CardHeader
-                        title={t.type}
-                    />
-                    <CardText>
-                        {skillDetails}
-                    </CardText>
-                </Card>
+                <Grid item sm={12} md={6}>
+                    <Card
+                    >
+                        <CardTitle
+                            title={t.type}
+                        />
+                        <CardText>
+                            {skillDetails}
+                        </CardText>
+                    </Card>
+                </Grid>
             );
         });
         return (
-            <MuiThemeProvider>
-                {skillTypes}
-            </MuiThemeProvider>
+            <Grid container spacing={24}>
+                <MuiThemeProvider>
+                    {skillTypes}
+                </MuiThemeProvider>
+            </Grid>
         );
     }
 };

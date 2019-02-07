@@ -1,37 +1,42 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { undergrad_data } from '../data/undergradData';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
+import Grid from '@material-ui/core/Grid';
 
 class Undergrad extends React.Component {
-  render() {
-    const ud = undergrad_data.map((u) => {
-      const bullets = u.info.map((c) => {
+    render() {
+        const ud = undergrad_data.map((u) => {
+            const bullets = u.info.map((c) => {
+                return (
+                    <li>{c}</li>
+                );
+            });
+            return (
+                <Grid item sm={12} md={6} lg={6}>
+                    <Card>
+                        <CardHeader
+                            title={u.year}
+                            subtitle="Click to view more details"
+                            actAsExpander={true}
+                            showExpandableButton={true}
+                        />
+                        <CardText expandable={true}>
+                            {bullets}
+                        </CardText>
+                    </Card>
+                </Grid>
+            );
+        });
         return (
-          <li>{c}</li>
+            <MuiThemeProvider>
+                <Grid container spacing={24}>
+                    {ud}
+                </Grid>
+            </MuiThemeProvider>
         );
-      });
-      return (
-        <Card>
-          <CardHeader
-            title={u.year}
-            subtitle="Click to view more details"
-            actAsExpander={true}
-            showExpandableButton={true}
-          />
-          <CardText expandable={true}>
-            {bullets}
-          </CardText>
-        </Card>
-      );
-    });
-    return (
-      <MuiThemeProvider>
-        {ud}
-      </MuiThemeProvider>
-    );
-  }
+    }
 }
 
 export default Undergrad
