@@ -10,9 +10,16 @@ export var skills_data = [
         ]
     },
     {
-        type: "Frameworks/Libraries",
+        type: "Frameworks",
         details: [
             "Angular",
+            "Flask",
+        ]
+    },
+    {
+        type: "Libraries",
+        details: [
+            "Angular Material",
             "Bootstrap",
             "MaterializeCSS",
             "jQuery",

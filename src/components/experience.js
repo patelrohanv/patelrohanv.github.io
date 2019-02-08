@@ -15,7 +15,7 @@ import Divider from '@material-ui/core/Divider';
 const styles = {
     card: {
         minWidth: 275,
-        height: 500,
+        minHeight: 600,
         backgroundColor: 'grey',
     },
 };
