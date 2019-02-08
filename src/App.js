@@ -25,14 +25,15 @@ class App extends Component {
         <Header />
         <div style= {styles.main}>
           <Skills />
-          <Divider />
+          <br />
           <Education />
-          <Divider />
+          <br />
           <Experience />
-          <Divider />
+          <br />
           <Projects />
-          <Divider />
+          <br />
           <Undergrad />
+          <br />
         </div>
         <Footer />
       </div>

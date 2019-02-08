@@ -8,54 +8,54 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-class Education extends React.Component {
+const styles = {
+    card: {
+        minWidth: 275,
+        maxWidth: 575,
+        margin: '25px',
+    },
+};
 
-    render() {
-        const styles = {
-            ul: {
-                listStyleType: 'none',
-            },
-        }
-        console.log(education_data)
-        const schoolInfo = education_data.map((e) => {
-            const classes = e.coursework.map((c) => {
-                return (
-                    <ListItem>
-                        <ListItemText primary={c} />
-                    </ListItem>
-                );
-            });
+const Education = (props) => {
+
+    const schoolInfo = education_data.map((e) => {
+        const classes = e.coursework.map((c) => {
             return (
-                <Grid item sm={6} md={6} lg={6}>
-                    <Card>
-                        <CardTitle
-                            title={e.school}
-                        >
-                        </CardTitle>
-                        <CardHeader
-                            title={e.degree}
-                            subtitle={e.graduated}
-                            actAsExpander={true}
-                            showExpandableButton={true}
-                        />
-                        <CardText expandable={true}>
-                            <p>Relevant coursework</p><br />
-                            <List dense={true}>
-                                {classes}
-                            </List>
-                        </CardText>
-                    </Card>
-                </Grid>
+                <ListItem>
+                    <ListItemText primary={c} />
+                </ListItem>
             );
         });
         return (
-            <MuiThemeProvider>
-                <Grid container spacing={12}>
-                    {schoolInfo}
-                </Grid>
-            </MuiThemeProvider>
+            <Grid item sm={6} md={6} lg={6}>
+                <Card style={styles.card}>
+                    <CardTitle
+                        title={e.school}
+                    >
+                    </CardTitle>
+                    <CardHeader
+                        title={e.degree}
+                        subtitle={e.graduated}
+                        actAsExpander={true}
+                        showExpandableButton={true}
+                    />
+                    <CardText expandable={true}>
+                        <p>Relevant coursework</p><br />
+                        <List dense={true}>
+                            {classes}
+                        </List>
+                    </CardText>
+                </Card>
+            </Grid>
         );
-    }
+    });
+    return (
+        <MuiThemeProvider>
+            <Grid container spacing={12}>
+                {schoolInfo}
+            </Grid>
+        </MuiThemeProvider>
+    );
 }
 
 export default Education

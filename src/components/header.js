@@ -19,21 +19,28 @@ const styles = {
         backgroundSize: 'cover',
         overflow: 'hidden',
     },
-}
+    button: {
+        margin: '10px'
+    }
+};
 
-const Header = () => (
+const Header = (props) => {
 
+    return (
     < div style={styles.header} >
+        <br />
         <img src={headshot} alt="headshot" style={styles.headshot} />
+        <br />
         <About />
         <br />
         <div>
-            <Button variant="contained" href={linkedIn} target="_blank"> LinkedIn</Button>
-            <Button variant="contained" href={github} target="_blank">GitHub</Button>
-            <Button variant="contained" href={resume} target="_blank"> Resume</Button>
+            <Button style={styles.button} variant="contained" href={linkedIn} target="_blank"> LinkedIn</Button>
+            <Button style={styles.button} variant="contained" href={github} target="_blank">GitHub</Button>
+            <Button style={styles.button} variant="contained" href={resume} target="_blank"> Resume</Button>
         </div>
         <br />
     </div >
-);
+    )
+};
 
 export default Header
