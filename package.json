@@ -2,7 +2,7 @@
   "name": "patelrohanv.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "patelrohanv.github.io",
+  "homepage": "http://patelrohanv.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
     "@fortawesome/free-brands-svg-icons": "^5.7.1",
