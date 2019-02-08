@@ -10,7 +10,7 @@ const styles = {
     },
     elevator: {
         backgroundColor: 'black',
-        opacity: 0.75,
+        opacity: 0.60,
         color: 'white',
         textAlign: 'center',
         display: 'block',
@@ -20,7 +20,7 @@ const styles = {
 
 const About = (props) => (
     <Paper style={styles.paper}>
-        <Typography component="p" style={styles.elevator}>
+        <Typography style={styles.elevator}>
             { about_data }
         </Typography >
     </Paper>

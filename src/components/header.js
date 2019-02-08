@@ -16,6 +16,7 @@ const styles = {
     },
     header: {
         backgroundImage: 'url(' + background + ')',
+        height: '500px',
         backgroundSize: 'cover',
         overflow: 'hidden',
     },

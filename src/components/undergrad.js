@@ -1,34 +1,48 @@
 import React from 'react';
 import { undergrad_data } from '../data/undergradData';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
 
 const styles = {
     card: {
         minWidth: 275,
-        maxWidth: 575,
-        margin: '25px',
+        backgroundColor: 'grey',
     },
+    cardHeader: {
+        color: 'gold',
+    }
 };
+
+AOS.init();
 
 const Undergrad = (props) => {
 
     const ud = undergrad_data.map((u) => {
         const bullets = u.info.map((c) => {
             return (
-                <ListItem>
-                    <ListItemText primary={c} />
-                </ListItem>
+                <div>
+                    <ListItem>
+                        <ListItemText primary={c} />
+                    </ListItem>
+                    <Divider />
+                </div>
             );
         });
         return (
-            <Grid item sm={12} md={6} lg={6}>
-                <Card style={styles.card}>
+            <Grid item sm md lg>
+                <Card style={styles.card}
+                    data-aos="fade-up"
+                    data-aos-duration="5000"
+                >
                     <CardHeader
                         title={u.year}
                         subtitle="Click to view more details"
@@ -41,12 +55,19 @@ const Undergrad = (props) => {
                         </List>
                     </CardText>
                 </Card>
+                <br />
             </Grid>
         );
     });
     return (
         <MuiThemeProvider>
-            <Grid container spacing={12}>
+            <Grid
+                container
+                spacing={12}
+                direction="row"
+                justify="space-around"
+                alignItems="center"
+            >
                 {ud}
             </Grid>
         </MuiThemeProvider>
