@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "patelrohanv.com/precache-manifest.ed55ea0d52c713c135a3ca2aaead72dc.js"
+  "patelrohanv.github.io/precache-manifest.e4d7fb26995af8a50415166a36432626.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("patelrohanv.com/index.html", {
+workbox.routing.registerNavigationRoute("patelrohanv.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
