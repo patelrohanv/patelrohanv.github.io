@@ -1,7 +1,7 @@
 import React from 'react';
 import About from './about'
 import headshot from '../images/headshot.jpg'
-import background from '../images/code_m.jpeg'
+import background from '../images/header.jpeg'
 import { github, linkedIn, resume } from '../data/linksData'
 
 import Button from '@material-ui/core/Button'

@@ -9,10 +9,12 @@ import Projects from './components/projects';
 import Undergrad from './components/undergrad';
 import Footer from './components/footer';
 
-import background from './images/desk_light_l.jpeg'
+import background from './images/background.jpeg'
 
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+
+import Navbar from 'react-bootstrap/Navbar'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -43,43 +45,42 @@ class App extends Component {
                 <Header />
                 <div style={styles.main}>
                     <br />
-                    <Paper style={styles.paper} >
-                        <Typography style={styles.section} variant="h4" gutterBottom>
-                            Skills
-                        </Typography>
-                    </Paper>
+                    <Navbar bg="dark" variant="dark" >
+                        <Navbar.Brand>
+                            {'Skills'}
+                        </Navbar.Brand>
+                    </Navbar>
                     <br />
                     <Skills />
                     <br />
-                    <Paper style={styles.paper}>
-                        <Typography style={styles.section} variant="h4" gutterBottom>
-                            Education
-                        </Typography>
-                    </Paper>
+                    <Navbar bg="dark" variant="dark" >
+                        <Navbar.Brand>
+                            {'Education'}
+                        </Navbar.Brand>
+                    </Navbar>
                     <br />
                     <Education />
                     <br />
-                    <Paper style={styles.paper}>
-                        <Typography style={styles.section} variant="h4" gutterBottom>
-                            Experience
-                        </Typography>
-                    </Paper>
+                    <Navbar bg="dark" variant="dark" >
+                        <Navbar.Brand>
+                        </Navbar.Brand>
+                    </Navbar>
                     <br />
                     <Experience />
                     <br />
-                    <Paper style={styles.paper}>
-                        <Typography style={styles.section} variant="h4" gutterBottom>
-                            Projects
-                        </Typography>
-                    </Paper>
+                    <Navbar bg="dark" variant="dark" >
+                        <Navbar.Brand>
+                            {'Projects'}
+                        </Navbar.Brand>
+                    </Navbar>
                     <br />
                     <Projects />
                     <br />
-                    <Paper style={styles.paper}>
-                        <Typography style={styles.section} variant="h4" gutterBottom>
-                            Undergraduate Experience
-                        </Typography>
-                    </Paper>
+                    <Navbar bg="dark" variant="dark" >
+                        <Navbar.Brand>
+                            {'Undergrate Experience'}
+                        </Navbar.Brand>
+                    </Navbar>
                     <br />
                     <Undergrad />
                     <br />

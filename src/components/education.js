@@ -35,7 +35,7 @@ const Education = (props) => {
             );
         });
         return (
-            <Grid item sm md lg>
+            <Grid item sm md lg >
                 <Card style={styles.card}
                     data-aos='fade-up'
                     data-aos-delay='300'
