@@ -4,18 +4,13 @@ import { undergrad_data } from '../data/undergradData';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Card, CardHeader, CardText } from 'material-ui/Card';
-import Grid from '@material-ui/core/Grid';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+import ListGroup from 'react-bootstrap/ListGroup'
 
 const styles = {
     card: {
         minWidth: 275,
-        backgroundColor: 'grey',
     },
     cardHeader: {
         color: 'gold',
@@ -30,47 +25,38 @@ const Undergrad = (props) => {
         const bullets = u.info.map((c) => {
             return (
                 <div>
-                    <ListItem>
-                        <ListItemText primary={c} />
-                    </ListItem>
-                    <Divider />
+                    <ListGroup.Item variant="secondary">
+                       {c}
+                    </ListGroup.Item>
                 </div>
             );
         });
         return (
-            <Grid item sm md lg>
-                <Card style={styles.card}
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                >
-                    <CardHeader
-                        title={u.year}
-                        subtitle="Click to view more details"
-                        actAsExpander={true}
-                        showExpandableButton={true}
-                    />
-                    <CardText expandable={true}>
-                        <List dense={true}>
+            <Card
+                bg="secondary" 
+                style={styles.card}
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='5000'
+            >
+                <Card.Body>
+                    <Card.Title>
+                        {u.year}
+                    </Card.Title>
+                    <Card.Text>
+                        <br />
+                        <ListGroup>
                             {bullets}
-                        </List>
-                    </CardText>
-                </Card>
-                <br />
-            </Grid>
+                        </ListGroup>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
         );
     });
     return (
-        <MuiThemeProvider>
-            <Grid
-                container
-                spacing={12}
-                direction="row"
-                justify="space-around"
-                alignItems="center"
-            >
-                {ud}
-            </Grid>
-        </MuiThemeProvider>
+        <CardDeck>
+            {ud}
+        </CardDeck>
     );
 }
 

@@ -4,16 +4,14 @@ import { project_data } from '../data/projectData';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Card, CardText, CardTitle, CardActions } from 'material-ui/Card';
-import { FlatButton } from 'material-ui';
-import Grid from '@material-ui/core/Grid';
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+import Button from 'react-bootstrap/Button'
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
 
 const styles = {
     card: {
         minWidth: 275,
-        height: 500,
-        backgroundColor: 'grey',
     },
 };
 
@@ -23,42 +21,34 @@ const Projects = (props) => {
 
     const prj = project_data.map((p) => {
         return (
-            <Grid item sm md lg>
-                <Card style={styles.card}
-                    data-aos="fade-up"
-                    data-aos-delay='300'
-                    data-aos-duration='5000'
-                >
-                    <CardTitle
-                        title={p.title}
-                    >
-                    </CardTitle>
-                    <CardText>
+            <Card
+                bg="secondary"
+                style={styles.card}
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='5000'
+            >
+                <Card.Body>
+                    <Card.Title>
+                        {p.title}
+                    </Card.Title>
+                    <Card.Text>
                         {p.info}
-                    </CardText>
-                    <CardActions>
-                        <FlatButton label="Repo" href={p.gitLink} />
+                    </Card.Text>
+                    <ButtonToolbar>
+                        <Button variant="secondary" href={p.gitLink}>Repo</Button>
                         {p.projectLink != null &&
-                            <FlatButton label="Link" href={p.projectLink} />
+                            <Button variant="secondary" href={p.projectLink}>Link</Button>
                         }
-                    </CardActions>
-                </Card>
-                <br />
-            </Grid>
+                    </ButtonToolbar>
+                </Card.Body>
+            </Card>
         );
     });
     return (
-        <MuiThemeProvider>
-            <Grid 
-                container
-                spacing={12}
-                direction="row"
-                justify="space-around"
-                alignItems="center"
-            >
-                {prj}
-            </Grid>
-        </MuiThemeProvider>
+        <CardDeck>
+            {prj}
+        </CardDeck>
     );
 }
 export default Projects

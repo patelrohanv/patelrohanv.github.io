@@ -4,19 +4,14 @@ import { experience_data } from '../data/experienceData';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { CardTitle, Card, CardHeader, CardText } from 'material-ui/Card';
-import Grid from '@material-ui/core/Grid';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+import ListGroup from 'react-bootstrap/ListGroup'
 
 const styles = {
     card: {
         minWidth: 275,
         minHeight: 600,
-        backgroundColor: 'grey',
     },
 };
 
@@ -28,47 +23,44 @@ const Experience = (props) => {
         const details = e.details.map((d) => {
             return (
                 <div>
-                    <ListItem>
-                        <ListItemText primary={d} />
-                    </ListItem>
-                    <Divider />
+                    <ListGroup.Item variant="secondary">
+                        {d}
+                    </ListGroup.Item>
                 </div>
             );
         });
         return (
-            <Grid item sm md lg>
-                <Card style={styles.card}
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                >
-                    <CardTitle title={e.title} />
-                    <CardHeader
-                        title={e.company}
-                        subtitle={e.dates}
-                    />
-                    <CardText>
-                        <List dense={true}>
+            <Card
+                bg="secondary"
+                style={styles.card}
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='5000'
+            >
+                <Card.Body>
+                    <Card.Title>
+                        {e.title}
+                    </Card.Title>
+                    <Card.Subtitle>
+                        {e.company}
+                        <br />
+                        {e.dates}
+                    </Card.Subtitle>
+                    <br />
+                    <Card.Text>
+                        <ListGroup>
                             {details}
-                        </List>
-                    </CardText>
-                </Card>
-                <br />
-            </Grid>
+                        </ListGroup>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
         );
     });
 
     return (
-        <MuiThemeProvider>
-            <Grid
-                container
-                spacing={12}
-                direction="row"
-                justify="space-around"
-                alignItems="center"
-            >
-                {exp}
-            </Grid>
-        </MuiThemeProvider>
+        <CardDeck>
+            {exp}
+        </CardDeck>
     );
 }
 

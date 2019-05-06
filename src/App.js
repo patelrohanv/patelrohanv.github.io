@@ -11,8 +11,6 @@ import Footer from './components/footer';
 
 import background from './images/background.jpeg'
 
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 
 import Navbar from 'react-bootstrap/Navbar'
 
@@ -63,6 +61,7 @@ class App extends Component {
                     <br />
                     <Navbar bg="dark" variant="dark" >
                         <Navbar.Brand>
+                            {'Experience'}
                         </Navbar.Brand>
                     </Navbar>
                     <br />
@@ -78,7 +77,7 @@ class App extends Component {
                     <br />
                     <Navbar bg="dark" variant="dark" >
                         <Navbar.Brand>
-                            {'Undergrate Experience'}
+                            {'Undergraduate Experience'}
                         </Navbar.Brand>
                     </Navbar>
                     <br />

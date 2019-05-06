@@ -1,8 +1,7 @@
 import React from 'react';
 import { about_data } from '../data/aboutData'
 
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import Card from 'react-bootstrap/Card'
 
 const styles = {
     paper: {
@@ -19,11 +18,7 @@ const styles = {
 };
 
 const About = (props) => (
-    <Paper style={styles.paper}>
-        <Typography style={styles.elevator}>
-            { about_data }
-        </Typography >
-    </Paper>
+    <Card body style={styles.elevator}>{ about_data }</Card>
 );
 
 export default About
