@@ -22,12 +22,12 @@ const Footer = () => (
         <Row>
             <Col>{personal.name}</Col>
             <Col></Col>
-            <Col><FontAwesomeIcon icon={faGithub} /></Col>
+            <Col><FontAwesomeIcon icon={faGithub} href={github}/></Col>
         </Row>
         <Row>
             <Col>{personal.location}</Col>
             <Col></Col>
-            <Col><FontAwesomeIcon icon={faLinkedinIn} /></Col>
+            <Col><FontAwesomeIcon icon={faLinkedinIn} href={linkedIn}/></Col>
         </Row>
         <Row>
             <Col>Designed and Built by Rohan Patel</Col>

@@ -5,9 +5,11 @@ export var experience_data = [
         title: "Software Engineer",
         dates: "September 2018 - Present",
         details: [
-            "Working on the Bank's internal cloud platform",
+            "Working on the Bank's private cloud platform",
             "Creating a service to reconcile the state of deployed services using Go",
-            "Creating API endpoints to automate deployments for specific versions of a service across multiple clusters",
+            "Adding API endpoints to automate deployments/updates for specific states of an app across multiple clusters using Go",
+            "Adding API endpoints to automate stopping/deleting/scaling apps across multiple clusters using Go",
+            "Help with campus recruiting efforts at career fairs, hackathons, and provide technical interviews for candidates",
         ]
     },
     {
